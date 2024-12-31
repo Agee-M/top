@@ -1,0 +1,68 @@
+* {
+
+    box-sizing: border-box;
+}
+
+html {
+    border: 5px solid red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 3;
+    word-spacing: 1.4px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border: 10px solid black;
+}
+
+.container {
+    border: 7px solid black;
+    height: 500px;
+    width: 83%;
+    margin: 050px;
+}
+
+.item {
+    background-color: #ed647b;
+    color: white;
+    text-align: center;
+    /* padding: 1rem; */
+    font-size: 10px;
+    width: 6rem;
+    height: 6rem;
+    border: 7px solid #b11919;
+}
+
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content:space-around; */
+    align-items: start;
+    /* flex-wrap: wrap; */
+    /* gap: 1em;  */
+    /* align-content:space-between; */
+}
+
+.item-3 {
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 0; */
+    /* flex: 1; */
+    /* align-self: center; */
+    order: -1;
+    /* changes the order of items you specify */
+    /* all items are set to 0 by default for order */
+}
+
+.item-1 {
+    order: 1; 
+    /* Avoid using order - it interrupts the semantics and accessibility of html */
+}
+
+
